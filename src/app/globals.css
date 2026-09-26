@@ -13,6 +13,7 @@
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
 
   --gutter: clamp(16px, 3vw, 40px);
+  color-scheme: dark;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -32,6 +33,7 @@ html {
 body {
   margin: 0;
   background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-display);
   font-size: 16px;
   line-height: 1.5;

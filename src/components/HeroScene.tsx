@@ -58,9 +58,6 @@ void main() {
   vec2 p = pos.xz * 0.16 + vec2(0.0, -uTime * 0.025 - uTravel);
   float h = ridged(p);
 
-  // Keep a low valley down the middle so the peaks frame the headline.
-  float valley = smoothstep(0.6, 5.5, abs(pos.x));
-  h *= mix(0.55, 1.15, valley);
 
   // The pointer pushes up a soft summit wherever it hovers.
   float d = distance(pos.xz, uMouse);

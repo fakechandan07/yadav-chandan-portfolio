@@ -30,12 +30,12 @@ export default function Intro() {
         const q = gsap.utils.selector(root);
         gsap.fromTo(
           q(".intro__word, .intro__pill"),
-          { opacity: 0.12 },
+          { opacity: 0.18 },
           {
             opacity: 1,
             ease: "none",
             stagger: 0.1,
-            scrollTrigger: { trigger: q(".intro__text")[0], start: "top 80%", end: "bottom 55%", scrub: true },
+            scrollTrigger: { trigger: q(".intro__text")[0], start: "top 90%", end: "bottom 70%", scrub: true },
           },
         );
         gsap.fromTo(
